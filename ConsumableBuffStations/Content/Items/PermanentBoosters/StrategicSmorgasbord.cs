@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace ConsumableBuffStations.Content.Items.PermanentBoosters
 {
-    public class WitchKebab : ModItem
+    public class StrategicSmorgasbord : ModItem
     {
         public override void SetDefaults()
         {
@@ -27,11 +27,11 @@ namespace ConsumableBuffStations.Content.Items.PermanentBoosters
         }
         public override bool CanUseItem(Player player)
         {
-            return !player.GetModPlayer<PermanentBuffPlayer>().BewitchingUnlocked;
+            return !player.GetModPlayer<PermanentBuffPlayer>().WarTableUnlocked;
         }
         public override bool? UseItem(Player player)
         {
-            player.GetModPlayer<PermanentBuffPlayer>().BewitchingUnlocked = true;
+            player.GetModPlayer<PermanentBuffPlayer>().WarTableUnlocked = true;
 
             return true;
         }
@@ -39,7 +39,7 @@ namespace ConsumableBuffStations.Content.Items.PermanentBoosters
         {
             tooltips.Add(new TooltipLine(Mod,
                 "PermanentUnlock",
-                "Permanently grants the effects of a Bewitching Table\n'It's pronounced 'weech''"));
+                "Permanently grants the effects of a War Table"));
         }
     }
 }

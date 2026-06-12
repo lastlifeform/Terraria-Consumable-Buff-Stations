@@ -3,4 +3,24 @@ Items: {
 		DisplayName: Witch Kebab
 		Tooltip: ""
 	}
+
+	BallisticPopcornBucket: {
+		DisplayName: Ballistic Popcorn Bucket
+		Tooltip: ""
+	}
+
+	ClairvoyantGumball: {
+		DisplayName: Clairvoyant Gumball
+		Tooltip: ""
+	}
+
+	PeppermintGrindstone: {
+		DisplayName: Peppermint Grindstone
+		Tooltip: ""
+	}
+
+	StrategicSmorgasbord: {
+		DisplayName: Strategic Smorgasbord
+		Tooltip: ""
+	}
 }
