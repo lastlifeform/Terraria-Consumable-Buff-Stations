@@ -1,1 +1,34 @@
 This description will show up on the steam page, check out https://steamcommunity.com/comment/Guide/formattinghelp.
+
+https://steamcommunity.com/comment/Guide/formattinghelp.
+
+[h1]Consumable Buff Stations[/h1]
+
+This is a small QOL mod that allows you to shimmer buff stations into “permanent booster” consumables, letting you have their buffs at all times.
+
+
+[h3]Transmutations[/h3]
+
+Ammo Box => Ballistic Popcorn Bucket
+
+Bewitching Table => Witch Kebab
+
+Crystal Ball => Clairvoyant Gumball
+
+Sharpening Station => Peppermint Grindstone 
+
+War Table => Strategic Smorgasbord
+
+
+[h3]My Links[/h3]
+
+
+Instagram: https://www.instagram.com/last_lifeform
+Xwitter: https://x.com/last_lifeform
+
+
+[h3]Future Updates[/h3]
+
+>Thorium compatibility
+
+>”Slice of Cake” and “Alchemy Flask” functionality 

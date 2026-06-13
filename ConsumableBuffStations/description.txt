@@ -1,1 +1,31 @@
-Modify this file with a description of your mod.
+This is a small QOL mod that allows you to shimmer buff stations into “permanent booster” consumables, letting you have their buffs at all times.
+
+--
+
+The following transmutations exist:
+
+Ammo Box => Ballistic Popcorn Bucket
+
+Bewitching Table => Witch Kebab
+
+Crystal Ball => Clairvoyant Gumball
+
+Sharpening Station => Peppermint Grindstone 
+
+War Table => Strategic Smorgasbord
+
+--
+
+My Links:
+
+
+Instagram: https://www.instagram.com/last_lifeform
+Xwitter: https://x.com/last_lifeform
+
+--
+
+Future Updates:
+
+>Thorium compatibility
+
+>”Slice of Cake” and “Alchemy Flask” functionality 
