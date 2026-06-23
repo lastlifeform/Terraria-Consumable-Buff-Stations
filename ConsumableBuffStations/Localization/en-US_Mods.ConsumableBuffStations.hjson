@@ -23,4 +23,19 @@ Items: {
 		DisplayName: Strategic Smorgasbord
 		Tooltip: ""
 	}
+
+	NinjaRibs: {
+		Tooltip: ""
+		DisplayName: Ninja Ribs
+	}
+
+	GoldenWafer: {
+		Tooltip: ""
+		DisplayName: Golden Wafer
+	}
+
+	ComposersCandy: {
+		Tooltip: ""
+		DisplayName: Composers Candy
+	}
 }

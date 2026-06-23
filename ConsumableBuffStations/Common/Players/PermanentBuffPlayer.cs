@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using Terraria.ID;
+using ConsumableBuffStations.Common.Systems;
 
 namespace ConsumableBuffStations.Common.Players
 {
@@ -12,6 +13,10 @@ namespace ConsumableBuffStations.Common.Players
         public bool SharpeningStationUnlocked;
         public bool CrystalBallUnlocked;
         public bool WarTableUnlocked;
+        //Thorium variables
+        public bool AltarUnlocked;
+        public bool ConductorsStandUnlocked;
+        public bool NinjaRackUnlocked;
 
         public override void SaveData(TagCompound tag)
         {
@@ -20,6 +25,10 @@ namespace ConsumableBuffStations.Common.Players
             tag["SharpeningStationUnlocked"] = SharpeningStationUnlocked;
             tag["CrystalBallUnlocked"] = CrystalBallUnlocked;
             tag["WarTableUnlocked"] = WarTableUnlocked;
+            //Thorium variables
+            tag["AltarUnlocked"] = AltarUnlocked;
+            tag["ConductorsStandUnlocked"] = ConductorsStandUnlocked;
+            tag["NinjaRackUnlocked"] = NinjaRackUnlocked;
         }
 
         public override void LoadData(TagCompound tag)
@@ -29,6 +38,10 @@ namespace ConsumableBuffStations.Common.Players
             SharpeningStationUnlocked = tag.GetBool("SharpeningStationUnlocked");
             CrystalBallUnlocked = tag.GetBool("CrystalBallUnlocked");
             WarTableUnlocked = tag.GetBool("WarTableUnlocked");
+            //Thorium variables
+            AltarUnlocked = tag.GetBool("AltarUnlocked");
+            ConductorsStandUnlocked = tag.GetBool("ConductorsStandUnlocked");
+            NinjaRackUnlocked = tag.GetBool("NinjaRackUnlocked");
         }
 
         public override void PostUpdateBuffs()
@@ -57,7 +70,27 @@ namespace ConsumableBuffStations.Common.Players
             {
                 Player.AddBuff(BuffID.WarTable, 2);
             }
-        }
+            // Thorium buffs
+            if (ThoriumCompatibilitySystem.Thorium != null)
+            {
+                if (AltarUnlocked &&
+                    ThoriumCompatibilitySystem.Thorium.TryFind<ModBuff>("AltarBuff", out var spiritualBuff))
+                {
+                    Player.AddBuff(spiritualBuff.Type, 2);
+                }
+
+                if (ConductorsStandUnlocked &&
+                    ThoriumCompatibilitySystem.Thorium.TryFind<ModBuff>("ConductorsStandBuff", out var conductorBuff))
+                {
+                    Player.AddBuff(conductorBuff.Type, 2);
+                }
+
+                if (NinjaRackUnlocked &&
+                    ThoriumCompatibilitySystem.Thorium.TryFind<ModBuff>("NinjaBuff", out var sleightBuff))
+                {
+                    Player.AddBuff(sleightBuff.Type, 2);
+                }
+            }
 
         //delete below this line
         //public override void OnEnterWorld()
@@ -67,6 +100,7 @@ namespace ConsumableBuffStations.Common.Players
 
         }
     
+    }
 }
 
 

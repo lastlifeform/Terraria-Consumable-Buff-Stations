@@ -22,6 +22,31 @@ namespace ConsumableBuffStations.Common.Systems
 
             ItemID.Sets.ShimmerTransformToItem[ItemID.WarTable] =
                 ModContent.ItemType<StrategicSmorgasbord>();
+
+            //Thorium transforms
+            if (ModLoader.TryGetMod("ThoriumMod", out Mod thoriumMod))
+            {
+                ModItem altarItem = thoriumMod.Find<ModItem>("Altar");
+                if (altarItem != null)
+                {
+                    ItemID.Sets.ShimmerTransformToItem[altarItem.Type] =
+                        ModContent.ItemType<GoldenWafer>();
+                }
+
+                ModItem conductorsStandItem = thoriumMod.Find<ModItem>("ConductorsStand");
+                if (conductorsStandItem != null)
+                {
+                    ItemID.Sets.ShimmerTransformToItem[conductorsStandItem.Type] =
+                        ModContent.ItemType<ComposersCandy>();
+                }
+
+                ModItem ninjaRackItem = thoriumMod.Find<ModItem>("NinjaRack");
+                if (ninjaRackItem != null)
+                {
+                    ItemID.Sets.ShimmerTransformToItem[ninjaRackItem.Type] =
+                        ModContent.ItemType<NinjaRibs>();
+                }
+            }
         }
     }
 }

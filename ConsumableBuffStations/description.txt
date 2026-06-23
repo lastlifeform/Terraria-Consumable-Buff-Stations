@@ -14,6 +14,12 @@ Sharpening Station => Peppermint Grindstone
 
 War Table => Strategic Smorgasbord
 
+
+If Thorium is installed:
+Altar => Golden Wafer
+Conductor’s Stand => Composers Candy
+Ninja Rack => Ninja Ribs
+
 --
 
 My Links:
@@ -21,11 +27,9 @@ My Links:
 
 Instagram: https://www.instagram.com/last_lifeform
 Xwitter: https://x.com/last_lifeform
+Patreon: https://www.patreon.com/cw/LastLifeform
 
 --
 
 Future Updates:
-
->Thorium compatibility
-
->”Slice of Cake” and “Alchemy Flask” functionality 
+”Slice of Cake” and “Alchemy Flask” functionality 
